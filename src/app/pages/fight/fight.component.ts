@@ -31,32 +31,32 @@ export class FightComponent implements OnInit {
     this.win = 2
 
     setTimeout(this.yesNoTimeout, 1200)
-    setTimeout(this.loger, 1200)
-    setTimeout(this.onRemoveHero, 1200)
+    // setTimeout(this.loger, 1200)
+    // setTimeout(this.onRemoveHero, 1200)
 
 
   }
 
   yesNoTimeout() {
     console.log('yes no');
-    this.loger()
-    this.onRemoveHero()
+    // this.loger()
+    // this.onRemoveHero()
     // this.router.navigate(['/'])
   }
 
-  loger() {
-    console.log('loger');
-  }
+  // loger() {
+  //   console.log('loger');
+  // }
 
   onBack() {
     this.router.navigateByUrl('/')
   }
 
-  onRemoveHero() {
-    console.log('this.win', this.win);
-    console.log('heroId', this.heroId);
-    console.log('this.hero', this.hero);
-    console.log('onremove');
-    // this.heroService.deleteHero(id)
-  }
+  // onRemoveHero() {
+  //   console.log('this.win', this.win);
+  //   console.log('heroId', this.heroId);
+  //   console.log('this.hero', this.hero);
+  //   console.log('onremove');
+  //   this.heroService.deleteHero(id)
+  // }
 }
