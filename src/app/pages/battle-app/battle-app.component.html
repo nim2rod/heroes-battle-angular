@@ -1,0 +1,9 @@
+<section class="battle-app">
+    <hero-filter></hero-filter>
+    <hero-list (onRemove)="onRemoveHero($event)" [heroes]="heroes$|async"></hero-list>
+    <router-outlet></router-outlet>
+    
+    <footer class="app-footer">
+        <p>coffeerights by Robot-Heroes-Company</p>
+    </footer>
+</section>

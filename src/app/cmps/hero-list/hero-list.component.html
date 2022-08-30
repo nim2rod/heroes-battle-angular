@@ -1,0 +1,3 @@
+<section class="list-container">
+    <hero-preview (onRemove)="onRemove.emit($event)" *ngFor="let hero of heroes" [hero]="hero"></hero-preview>
+</section>

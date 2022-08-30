@@ -1,0 +1,40 @@
+<section *ngIf="hero" class="add-hero">
+    <h2>Add Hero</h2>
+   
+    <form (ngSubmit)="onSaveHero()">
+        <div class="add-name">
+            <label for="name">Name</label>
+            <input [(ngModel)]="hero.name" type="text" name="name" id="name">
+        </div>
+
+        <label class="parameter" for="typeOf"><br> Type of:</label>
+
+<div class="input-type-of">
+        <input [(ngModel)]="hero.typeOf" type="radio" id="typeOf" name="typeOf" value="Samorai">
+        <label for="Samorai">Samorai</label><br>
+
+        <input [(ngModel)]="hero.typeOf" type="radio" id="typeOf" name="typeOf" value="Robot">
+        <label for="Robot">Robot</label><br>
+
+        <input [(ngModel)]="hero.typeOf" type="radio" id="typeOf" name="typeOf" value="Spartan">
+        <label for="Spartan">Spartan</label>
+</div>
+
+<label class="parameter" for="typeOf"><br> Attack:</label>
+
+<div class="input-type-of">
+    <input [(ngModel)]="hero.attacks" type="radio" id="attack" name="attack" value="sword">
+    <label for="sword">Sword</label><br>
+
+    <input [(ngModel)]="hero.attacks" type="radio" id="attack" name="attack" value="spear">
+    <label for="spear">Spear</label><br>
+
+    <input [(ngModel)]="hero.attacks" type="radio" id="attack" name="attack" value="water-jet">
+    <label for="water-jet">Water-jet</label>
+</div>
+<div class="bottom-card">
+    <button>Save</button>
+    <span>Price: 140</span>
+</div>
+    </form>
+</section>

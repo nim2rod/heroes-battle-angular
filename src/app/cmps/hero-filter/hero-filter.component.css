@@ -1,0 +1,18 @@
+.form-cont {
+    min-width: 100vw;
+}
+
+input {
+    outline: none;
+    color: #2d1941;
+    color: rgb(149, 102, 102);
+    background-color: aqua;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-left: 11vw;
+    border: solid 0.5px #dcd1d1;
+    margin-bottom: 0.8em;
+    padding: 0.15em;
+}

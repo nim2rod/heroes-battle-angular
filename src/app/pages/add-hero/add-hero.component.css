@@ -1,0 +1,54 @@
+.add-hero {
+    border: solid 0.5px #c7c7c7;
+    padding: 1.5em;
+    border-radius: 5px;
+    background-color: #cef4e5;
+    box-shadow: -0.5px 1px 8px #dbdbdb;
+    color: #5f4242;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.add-name {
+    margin-top: 0.5em;
+}
+
+.add-name input {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-left: 0.3em;
+    border: solid 0.5px #dcd1d1;
+    padding: 0.15em;
+    color: #5f4242;
+}
+
+.parameter {
+    font-weight: 500;
+}
+
+.input-type-of {
+    margin-top: 0.4em;
+}
+
+button {
+    margin-top: 1em;
+    background-color: #f1ede7;
+    border: solid 0.8px #d5c9c9;
+    border-radius: 5px;
+    color: #5f4242;
+    font-size: 1.2em;
+}
+
+.bottom-card {
+    display: flex;
+    align-items: end;
+    gap: 2em;
+}
+
+.bottom-card span {
+    font-weight: 500;
+}

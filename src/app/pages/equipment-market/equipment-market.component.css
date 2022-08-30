@@ -1,0 +1,52 @@
+.market {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headline-store {
+    color: brown;
+    font-size: 2em;
+}
+
+.main-store {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    color: #5f4242;
+}
+
+.med-catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 1em;
+}
+
+.med-catalog img {
+    width: 100px;
+}
+
+
+.card-market {
+    border: solid 0.5px #c7c7c7;
+    border-radius: 5px;
+    padding: 0.8em;
+    height: 15em;
+    width: 12em;
+    background-color: #cef4e5;
+    box-shadow: -0.5px 1px 8px #dbdbdb;
+    cursor: pointer;
+}
+
+.card-market h3 {
+    padding: 0.5em;
+}
+
+.card-market span {
+    font-weight: 500;
+}
+
+.right-side-store {
+    text-align: center;
+}

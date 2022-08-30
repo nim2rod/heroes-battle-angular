@@ -1,0 +1,18 @@
+<section class="hero-preview">
+
+    <a [routerLink]="['/hero', hero._id]">
+        <p> {{hero.name}}</p>
+    </a>
+    
+    <section class="bottom-card">
+        <div class="action-card">
+            <button class="btn btn-x" (click)="onRemoveHero()">X</button>
+         
+                <button [routerLink]="['/battle', hero._id]" class="btn btn-fight">Fight
+                    <img src="../../../assets/img/fight copy.png" alt="">
+                </button>
+           
+        </div>
+        <img src="https://robohash.org/{{hero._id}}?set=set1">
+    </section>
+</section>

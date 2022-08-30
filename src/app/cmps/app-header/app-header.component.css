@@ -1,0 +1,23 @@
+.app-header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    color: rgb(149, 102, 102);
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 10vw;
+}
+
+.header-left {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    gap: 3em;
+}
