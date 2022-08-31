@@ -42,4 +42,14 @@ public getUser() {
   return this.user$;
 }
 
+public changeBalance(amount: number) {
+  console.log('change balance');
+  
+  const editedUser = { ...this._user$.value };
+  editedUser.balance += amount;
+  this.utilService.store(this.KEY, editedUser);
+  this._user$.next(editedUser);
+  return 1
+}
+
 }
