@@ -1,5 +1,6 @@
 import { Component, NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { AddHeroComponent } from './pages/add-hero/add-hero.component';
 import { BattleAppComponent } from './pages/battle-app/battle-app.component';
@@ -35,7 +36,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
