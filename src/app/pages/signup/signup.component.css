@@ -1,0 +1,28 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+    gap: 1em;
+}
+
+input {
+    color: rgb(149, 102, 102);
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    border: solid 0.5px #dcd1d1;
+    margin-bottom: 0.8em;
+    padding: 0.15em;
+}
+
+.signup div {
+    font-size: 1.5em;
+    color: rgb(149, 102, 102);
+    background-color: antiquewhite;
+    padding: 0.3em;
+    border-radius: 5px;
+    border: solid 0.5px #dcd1d1;
+    cursor: pointer;
+}

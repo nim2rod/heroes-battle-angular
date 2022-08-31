@@ -9,7 +9,7 @@ import { UtilsService } from './utils.service';
 export class UserService {
 
   private KEY = 'user';
-  private _user: UserModel
+  private _user!: UserModel
 
   private _user$ = new BehaviorSubject<UserModel>(this.utilService.load(this.KEY) || null)
   public user$ = this._user$.asObservable()
@@ -18,6 +18,8 @@ export class UserService {
 
   public signup(name: string) {
     let user = this.utilService.load(this.KEY)
+    console.log('user from load',user);
+    
     if (!user) {
       let newUser = new UserModel();
       newUser.name = name;
@@ -27,5 +29,17 @@ export class UserService {
     this._user$.next(this._user);
     return of()
   }
+
+  public isAuthenticated(): boolean {
+    const user = this._user$.getValue();
+    console.log('user',user);
+    
+    return !!user
+    // return (user) ? true : false;
+}
+
+public getUser() {
+  return this.user$;
+}
 
 }

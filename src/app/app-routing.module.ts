@@ -8,22 +8,25 @@ import { EquipmentMarketComponent } from './pages/equipment-market/equipment-mar
 import { FightComponent } from './pages/fight/fight.component';
 import { HeroDetailsComponent } from './pages/hero-details/hero-details.component';
 import { HeroResolver } from './resolvers/hero.resolver';
+import {SignupComponent} from './pages/signup/signup.component'
+import {AuthService} from './services/auth.service'
 
 const routes: Routes = [
   {
-    path: '', component: BattleAppComponent
-    // , children: [
-    //   { path: 'add', component: AddHeroComponent }
-    // ]
+    path: '', component: BattleAppComponent,
+    canActivate: [ AuthService ]
   },
   {
-    path: 'equipment-store', component: EquipmentMarketComponent
+    path: 'equipment-store', component: EquipmentMarketComponent,  canActivate: [ AuthService ]
   },
   {
     path: 'about', component: AboutComponent
   },
   {
     path: 'battle/:id', component: FightComponent
+  },
+  {
+    path: 'signup', component: SignupComponent
   },
   {
     path: 'hero/:id',

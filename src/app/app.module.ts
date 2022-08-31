@@ -15,6 +15,7 @@ import { AddHeroComponent } from './pages/add-hero/add-hero.component';
 import { EquipmentMarketComponent } from './pages/equipment-market/equipment-market.component';
 import { FightComponent } from './pages/fight/fight.component';
 import { FormsModule } from '@angular/forms';
+import { SignupComponent } from './pages/signup/signup.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     HeroDetailsComponent,
     AddHeroComponent,
     EquipmentMarketComponent,
-    FightComponent
+    FightComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
