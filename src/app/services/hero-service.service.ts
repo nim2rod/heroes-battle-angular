@@ -8,152 +8,152 @@ const HOROES = [
   {
     "_id": "5a56640269f443a5d64b32ca",
     "name": "Ochoa Hyde",
-    "typeOf": "samorai",
-    "attacks": "bow and arrow",
+    "typeOf": "Samorai",
+    "attacks": "Bow and arrow",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a5664025f6ae9aa24a99fde",
     "name": "Hallie Mclean",
-    "typeOf": "halliemclean@renovize.com",
-    "attacks": "bow and arrow",
+    "typeOf": "Robot",
+    "attacks": "Bow and arrow",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a56640252d6acddd183d319",
     "name": "Parsons Norris",
-    "typeOf": "ninja",
-    "attacks": "spear",
+    "typeOf": "Ninja",
+    "attacks": "Spear",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a566402ed1cf349f0b47b4d",
     "name": "Rachel Lowe",
-    "typeOf": "spartan",
-    "attacks": "sword",
+    "typeOf": "Spartan",
+    "attacks": "Sword",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a566402abce24c6bfe4699d",
     "name": "Dominique Soto",
-    "typeOf": "robot",
-    "attacks": "water jet",
+    "typeOf": "Robot",
+    "attacks": "Water jet",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a566402a6499c1d4da9220a",
     "name": "Shana Pope",
-    "typeOf": "samorai",
-    "attacks": "rugatka",
+    "typeOf": "Samorai",
+    "attacks": "Rugatka",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a566402f90ae30e97f990db",
     "name": "Faulkner Flores",
-    "typeOf": "ninja",
-    "attacks": "bow and arrow",
+    "typeOf": "Ninja",
+    "attacks": "Bow and arrow",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a5664027bae84ef280ffbdf",
     "name": "Holder Bean",
-    "typeOf": "samorai",
-    "attacks": "spear",
+    "typeOf": "Samorai",
+    "attacks": "Spear",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a566402e3b846c5f6aec652",
     "name": "Rosanne Shelton",
-    "typeOf": "pirate",
-    "attacks": "sword",
+    "typeOf": "Pirate",
+    "attacks": "Sword",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a56640272c7dcdf59c3d411",
     "name": "Pamela Nolan",
-    "typeOf": "robot",
-    "attacks": "slingstone",
+    "typeOf": "Robot",
+    "attacks": "Slingstone",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a5664029a8dd82a6178b15f",
     "name": "Roy Cantu",
-    "typeOf": "spartan",
-    "attacks": "water jet",
+    "typeOf": "Spartan",
+    "attacks": "Water jet",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a5664028c096d08eeb13a8a",
     "name": "Ollie Christian",
-    "typeOf": "ninja",
-    "attacks": "spear",
+    "typeOf": "Ninja",
+    "attacks": "Spear",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a5664026c53582bb9ebe9d1",
     "name": "Nguyen Walls",
-    "typeOf": "pirate",
-    "attacks": "slingstone",
+    "typeOf": "Pirate",
+    "attacks": "Slingstone",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a56640298ab77236845b82b",
     "name": "Glenna Santana",
-    "typeOf": "spartan",
-    "attacks": "rugatka",
+    "typeOf": "Spartan",
+    "attacks": "Rugatka",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a56640208fba3e8ecb97305",
     "name": "Malone Clark",
-    "typeOf": "robot",
-    "attacks": "rugatka",
+    "typeOf": "Robot",
+    "attacks": "Rugatka",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a566402abb3146207bc4ec5",
     "name": "Floyd Rutledge",
-    "typeOf": "troy",
-    "attacks": "water jet",
+    "typeOf": "Troy",
+    "attacks": "Water jet",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a56640298500fead8cb1ee5",
     "name": "Grace James",
-    "typeOf": "robot",
-    "attacks": "water jet",
+    "typeOf": "Robot",
+    "attacks": "Water jet",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a56640243427b8f8445231e",
     "name": "Tanner Gates",
-    "typeOf": "pirate",
-    "attacks": "spear",
+    "typeOf": "Pirate",
+    "attacks": "Spear",
     "power": 5,
     "life": 2
   },
   {
     "_id": "5a5664025c3abdad6f5e098c",
     "name": "Lilly Conner",
-    "typeOf": "samorai",
-    "attacks": "bow and arrow",
+    "typeOf": "Samorai",
+    "attacks": "Bow and arrow",
     "power": 5,
     "life": 2
   }

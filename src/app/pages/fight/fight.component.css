@@ -8,3 +8,12 @@
     display: flex;
     gap: 8em;
 }
+
+button {
+    background-color: #f1ede7;
+    border: solid 0.8px #dcd1d1;
+    border-radius: 5px;
+    color: #d2643b;
+    margin-bottom: 2px;
+    font-size: 1.3em;
+}

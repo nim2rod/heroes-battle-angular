@@ -21,28 +21,30 @@ export class FightComponent implements OnInit {
 
   @Input() heroId!: string
   hero!: Hero
-  win!: number
+  // win!: number
 
   ngOnInit(): void {
     this.route.params.subscribe(async params => {
       const hero = await lastValueFrom(this.heroService.getHeroById(params['id']))
       if (hero) this.hero = hero
-    })
-    this.win = 2
+      console.log('this.hero', this.hero);
 
-    setTimeout(this.yesNoTimeout, 1200)
+    })
+    // this.win = 2
+
+    // setTimeout(this.yesNoTimeout, 1200)
     // setTimeout(this.loger, 1200)
     // setTimeout(this.onRemoveHero, 1200)
 
 
   }
 
-  yesNoTimeout() {
-    console.log('yes no');
-    // this.loger()
-    // this.onRemoveHero()
-    // this.router.navigate(['/'])
-  }
+  // yesNoTimeout() {
+  //   console.log('yes no');
+  // this.loger()
+  // this.onRemoveHero()
+  // this.router.navigate(['/'])
+  // }
 
   // loger() {
   //   console.log('loger');

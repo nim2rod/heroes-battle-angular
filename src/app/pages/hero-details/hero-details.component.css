@@ -1,0 +1,42 @@
+.details-cont {
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    /* height: 366px; */
+    height: 400px;
+    width: 370px;
+}
+
+.details-cont img {
+    position: relative;
+    top: 3.13em;
+    left: 4em;
+    width: 21.75em
+}
+
+.details-data {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.details-data div {
+    box-shadow: -0.5px 1px 8px #d8dcd6;
+    background-color: rgb(255, 249, 240);
+    font-size: 1.2em;
+    color: #704d5e;
+}
+
+.details-data div span {
+    font-size: 1.5em;
+    margin-left: 0.15em;
+}
+
+button {
+    background-color: #f1ede7;
+    border: solid 0.8px #dcd1d1;
+    border-radius: 5px;
+    color: #d2643b;
+    margin-bottom: 2px;
+    font-size: 1.3em;
+}
