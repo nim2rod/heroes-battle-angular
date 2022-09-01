@@ -36,12 +36,12 @@ export class AddHeroComponent implements OnInit {
 
   async onSaveHero() {
     if(this.user.balance<120){
-      let audio = new Audio('../../../assets/sounds/stuck.wav')
+      let audio = new Audio('./assets/sounds/stuck.wav')
       audio.play()
       return
     } 
 
-    let audio = new Audio('../../../assets/sounds/add-hero.wav')
+    let audio = new Audio('./assets/sounds/add-hero.wav')
     audio.play()
 
     await this.heroService.saveHero(this.hero)

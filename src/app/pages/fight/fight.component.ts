@@ -32,7 +32,7 @@ export class FightComponent implements OnInit {
     })
     
     //BACKROUND FIGHT MUSIC
-    let audio = new Audio('../../../assets/sounds/battle.wav')
+    let audio = new Audio('./assets/sounds/battle.wav')
     audio.play()
 
     //RANDOM WINNER
@@ -45,7 +45,7 @@ export class FightComponent implements OnInit {
       },3500)
 
     setTimeout(()=>{
-      let audio = new Audio('../../../assets/sounds/earn-coin.wav')
+      let audio = new Audio('./assets/sounds/earn-coin.wav')
       audio.play()
     },2500)
 
@@ -62,7 +62,7 @@ export class FightComponent implements OnInit {
 
       },3500)
       setTimeout(()=>{
-        let audio = new Audio('../../../assets/sounds/lose.wav')
+        let audio = new Audio('./assets/sounds/lose.wav')
         audio.play()
       },2500)
     } 
