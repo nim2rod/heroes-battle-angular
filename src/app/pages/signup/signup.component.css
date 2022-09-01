@@ -26,3 +26,9 @@ input {
     border: solid 0.5px #dcd1d1;
     cursor: pointer;
 }
+
+@media (max-width: 500px) {
+    input {
+        margin-top: 4em;
+    }
+}

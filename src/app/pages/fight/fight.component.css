@@ -17,3 +17,22 @@ button {
     margin-bottom: 2px;
     font-size: 1.3em;
 }
+
+@media (max-width: 500px) {
+    .battle-page h1 {
+        margin-top: 4em;
+    }
+
+    .robots {
+        gap: 0em;
+    }
+
+    .robots img {
+        width: 190px;
+    }
+
+    button {
+        height: 1.9em;
+        width: 3.5em
+    }
+}

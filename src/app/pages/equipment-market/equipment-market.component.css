@@ -50,3 +50,36 @@
 .right-side-store {
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    .main-store {
+        flex-direction: column;
+    }
+
+    .headline-store {
+        text-align: -webkit-center;
+        font-weight: 300;
+        font-size: 2.1em;
+        margin-top: 3em;
+    }
+
+    .med-catalog {
+        justify-content: center;
+        margin-bottom: 3em;
+    }
+
+    .card-market div {
+        font-size: 1.2em;
+        font-weight: 500;
+    }
+
+    .card-market h5 {
+        font-size: 1em;
+    }
+
+    .card-market h3 {
+        padding: 0.2em;
+        font-weight: 700;
+    }
+
+}

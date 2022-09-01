@@ -21,7 +21,7 @@ export class SignupComponent implements OnInit {
 
   async signUp() {
     await this.userService.signup(this.user.name).toPromise();
-    this.router.navigate(['/']);
+    this.router.navigate(['/rules']);
 }
 
 }

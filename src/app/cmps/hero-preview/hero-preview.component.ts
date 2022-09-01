@@ -20,9 +20,13 @@ export class HeroPreviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
   onRemoveHero() {
     this.onRemove.emit(this.hero._id)
     // this.heroService.deleteHero(this.hero._id)
     this.userService.changeBalance(30)
+    let audio = new Audio('../../../assets/sounds/earn-coin.wav')
+    audio.play()
   }
 }

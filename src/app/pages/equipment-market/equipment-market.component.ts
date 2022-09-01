@@ -22,8 +22,14 @@ export class EquipmentMarketComponent implements OnInit {
   }
 
   buyAid(price: number,aidNum: number){ 
-  if(this.user.balance<(-price)) return
+  if(this.user.balance<(-price)){
+    let audio = new Audio('../../../assets/sounds/stuck.wav')
+    audio.play()
+    return
+  } 
 
+  let audio = new Audio('../../../assets/sounds/add.wav')
+  audio.play()
     this.userService.changeBalance(price)
     this.userService.changeAidNum(aidNum)
   }

@@ -38,7 +38,7 @@ export class FightComponent implements OnInit {
     //RANDOM WINNER
 
     //WIN
-    if(Math.random()>0.9){
+    if(Math.random()>0.6){
       setTimeout(()=>{
         this.userService.changeBalance(30)
         this.router.navigateByUrl('/')
@@ -53,7 +53,6 @@ export class FightComponent implements OnInit {
     //LOSE
     } else{
       setTimeout(()=>{
-//hero.life -- 
         const updatedHero = this.hero
         updatedHero.life -- 
         this.heroService.saveHero(updatedHero)

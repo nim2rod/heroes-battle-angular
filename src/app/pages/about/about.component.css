@@ -1,3 +1,38 @@
-/* .about-page{
-    w
-} */
+.rules-page {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35em;
+    margin-left: 1em;
+    font-size: 1.3em;
+    ;
+}
+
+.rules-page p span {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+h1 {
+    color: brown;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+div {
+    background-color: #f1ede7;
+    width: 70px;
+    text-align-last: center;
+    font-size: 1.5em;
+    place-self: center;
+    margin-top: 0.3em;
+    border-radius: 3px;
+    border: solid 1px lightblue;
+    color: #8d2b49;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        margin-top: 3.9em;
+    }
+}

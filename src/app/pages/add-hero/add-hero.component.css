@@ -24,6 +24,7 @@ h2 {
     border: solid 0.5px #dcd1d1;
     padding: 0.15em;
     color: #5f4242;
+    background-color: #f6f7f7;
 }
 
 .parameter {
@@ -51,4 +52,25 @@ button {
 
 .bottom-card span {
     font-weight: 500;
+}
+
+@media (max-width: 500px) {
+
+    .input-type-of {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        text-align: -webkit-center;
+        margin-bottom: 0.5em;
+        font-size: 2.2em;
+        font-weight: 200;
+    }
+
+    .bottom-card span {
+        font-weight: 500;
+        font-size: 1.5em;
+        border-radius: 5px;
+        padding: 1px;
+    }
 }

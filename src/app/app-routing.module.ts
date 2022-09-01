@@ -17,13 +17,15 @@ const routes: Routes = [
     canActivate: [ AuthService ]
   },
   {
-    path: 'equipment-store', component: EquipmentMarketComponent,  canActivate: [ AuthService ]
+    path: 'equipment-store', component: EquipmentMarketComponent,
+    canActivate: [ AuthService ]
   },
   {
-    path: 'about', component: AboutComponent
+    path: 'rules', component: AboutComponent
   },
   {
-    path: 'battle/:id', component: FightComponent
+    path: 'battle/:id', component: FightComponent,
+    canActivate: [ AuthService ]
   },
   {
     path: 'signup', component: SignupComponent
@@ -31,6 +33,7 @@ const routes: Routes = [
   {
     path: 'hero/:id',
     component: HeroDetailsComponent,
+    canActivate: [ AuthService ],
     resolve: { hero: HeroResolver }
     // resolve: { hero: ContactResolver }, children: [
     //   { path: 'edit/:id', component: EditComponent, resolve: { hero: ContactResolver } },

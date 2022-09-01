@@ -41,7 +41,14 @@ export class HeroDetailsComponent implements OnInit {
   }
 
   onHeal() {
-   if(this.user.aid<1) return
+   if(this.user.aid<1) {
+    let audio = new Audio('../../../assets/sounds/stuck.wav')
+    audio.play()
+     return
+  } 
+
+   let audio = new Audio('../../../assets/sounds/add.wav')
+   audio.play()
       //update hero
         const updatedHero = this.hero
         updatedHero.life ++

@@ -56,3 +56,21 @@ button {
     font-size: 1.3em;
     width: 4em;
 }
+
+@media (max-width: 500px) {
+    .details-cont {
+        margin-top: 7em;
+        width: fit-content;
+        position: fixed;
+        right: 1em;
+    }
+
+    .bottom {
+        bottom: 6.5em;
+    }
+
+    button {
+        width: 3em;
+        height: 3em;
+    }
+}

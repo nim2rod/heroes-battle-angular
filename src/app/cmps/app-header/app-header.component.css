@@ -21,3 +21,43 @@
     display: flex;
     gap: 3em;
 }
+
+@media (max-width: 500px) {
+    .app-header {
+        /* background-color: rgb(202, 198, 205); */
+        padding-inline: 0vw;
+        font-size: 1em;
+        position: fixed;
+        z-index: 5;
+    }
+
+    .header-left {
+        gap: 0.3em;
+        width: 193px;
+        font-size: 1.1em;
+    }
+
+    .header-left div {
+        text-align: center;
+        /* box-shadow: 1px 1px 1px #e4e4e4; */
+        height: 76px;
+        display: flex;
+        align-items: center;
+        font-size: 0.85em;
+    }
+
+    .header-right {
+        display: flex;
+        gap: 0.1em;
+        padding-right: 8px;
+    }
+
+    .header-right a {
+        box-shadow: -1px 1px 1px #e4e4e4;
+        height: 76px;
+        width: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

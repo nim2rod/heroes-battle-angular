@@ -16,3 +16,9 @@ input {
     margin-bottom: 0.8em;
     padding: 0.15em;
 }
+
+@media (max-width: 500px) {
+    input {
+        margin-top: 5.5em;
+    }
+}
