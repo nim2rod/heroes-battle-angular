@@ -29,13 +29,11 @@ export class FightComponent implements OnInit {
     this.route.params.subscribe(async params => {
       const hero = await lastValueFrom(this.heroService.getHeroById(params['id']))
       if (hero) this.hero = hero
-      console.log('this.hero', this.hero);
     })
     
     //BACKROUND FIGHT MUSIC
     let audio = new Audio('../../../assets/sounds/battle.wav')
     audio.play()
-
 
     //RANDOM WINNER
 
@@ -55,11 +53,9 @@ export class FightComponent implements OnInit {
     //LOSE
     } else{
       setTimeout(()=>{
-           console.log('this.hero', this.hero);
 //hero.life -- 
         const updatedHero = this.hero
         updatedHero.life -- 
-        console.log('updatedHero',updatedHero);
         this.heroService.saveHero(updatedHero)
 
         this.userService.changeBalance(-30)

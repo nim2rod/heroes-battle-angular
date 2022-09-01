@@ -21,8 +21,6 @@ export class SignupComponent implements OnInit {
 
   async signUp() {
     await this.userService.signup(this.user.name).toPromise();
-    console.log('this.user',this.user);
-    
     this.router.navigate(['/']);
 }
 

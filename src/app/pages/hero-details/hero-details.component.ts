@@ -41,12 +41,10 @@ export class HeroDetailsComponent implements OnInit {
   }
 
   onHeal() {
-   console.log('this.hero',this.hero);
    if(this.user.aid<1) return
-   //update hero
-   const updatedHero = this.hero
+      //update hero
+        const updatedHero = this.hero
         updatedHero.life ++
-        console.log('updatedHero',updatedHero);
         this.heroService.saveHero(updatedHero)
 
       //update user

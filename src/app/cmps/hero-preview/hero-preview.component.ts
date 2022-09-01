@@ -12,25 +12,15 @@ import { HeroService } from 'src/app/services/hero-service.service';
 })
 export class HeroPreviewComponent implements OnInit {
 
-    // user!: UserModel;
-    // userSubscriber!: Subscription;
-
   constructor(private userService: UserService, private heroService: HeroService) { }
 
   @Input() hero!: Hero
   @Output() onRemove = new EventEmitter<string>()
 
   ngOnInit(): void {
-    // this.userSubscriber = this.userService.user$.subscribe(user => this.user = user);
   }
 
-//   ngOnDestroy() {
-//     this.userSubscriber.unsubscribe();
-// }
-
   onRemoveHero() {
-    console.log(this.hero);
-    
     this.onRemove.emit(this.hero._id)
     // this.heroService.deleteHero(this.hero._id)
     this.userService.changeBalance(30)

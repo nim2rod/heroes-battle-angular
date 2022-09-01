@@ -18,7 +18,6 @@ export class UserService {
 
   public signup(name: string) {
     let user = this.utilService.load(this.KEY)
-    console.log('user from load',user);
     
     if (!user) {
       let newUser = new UserModel();
@@ -32,7 +31,6 @@ export class UserService {
 
   public isAuthenticated(): boolean {
     const user = this._user$.getValue();
-    console.log('user',user);
     
     return !!user
     // return (user) ? true : false;

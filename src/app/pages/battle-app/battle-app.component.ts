@@ -21,8 +21,6 @@ export class BattleAppComponent implements OnInit {
   }
 
   onRemoveHero(heroId: string) {
-    console.log('onremove');
-
     this.heroService.deleteHero(heroId)
   }
 
