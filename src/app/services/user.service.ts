@@ -43,14 +43,18 @@ public getUser() {
 }
 
 public changeBalance(amount: number) {
-  console.log('change balance');
   const editedUser = { ...this._user$.value };
-  console.log('editedUser.balance',editedUser.balance);
-  console.log('amount',amount);
-  console.log();
-  
   if((editedUser.balance + amount)<0) return
   editedUser.balance += amount;
+  this.utilService.store(this.KEY, editedUser);
+  this._user$.next(editedUser);
+  return 1
+}
+
+public changeAidNum(num: number){
+  const editedUser = { ...this._user$.value };
+  if((editedUser.aid + num)<0) return
+  editedUser.aid += num;
   this.utilService.store(this.KEY, editedUser);
   this._user$.next(editedUser);
   return 1

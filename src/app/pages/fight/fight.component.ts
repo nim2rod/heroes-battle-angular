@@ -38,40 +38,39 @@ export class FightComponent implements OnInit {
 
 
     //RANDOM WINNER
-    //WIN
-    if(Math.random()>0.5){
-      this.userService.changeBalance(30)
-      setTimeout(()=>{
-        this.router.navigateByUrl('/')
 
+    //WIN
+    if(Math.random()>0.9){
+      setTimeout(()=>{
+        this.userService.changeBalance(30)
+        this.router.navigateByUrl('/')
       },3500)
+
     setTimeout(()=>{
-      console.log('win');
       let audio = new Audio('../../../assets/sounds/earn-coin.wav')
       audio.play()
     },2500)
+
+
     //LOSE
     } else{
-      this.userService.changeBalance(-30)
       setTimeout(()=>{
+           console.log('this.hero', this.hero);
+//hero.life -- 
+        const updatedHero = this.hero
+        updatedHero.life -- 
+        console.log('updatedHero',updatedHero);
+        this.heroService.saveHero(updatedHero)
+
+        this.userService.changeBalance(-30)
         this.router.navigateByUrl('/')
 
       },3500)
       setTimeout(()=>{
-        console.log('lose');
         let audio = new Audio('../../../assets/sounds/lose.wav')
         audio.play()
       },2500)
     } 
-      
-    
-    setTimeout(this.timer, 1200)
-  }
-
-  timer() {
-    console.log('timer');
-    // this.userService.changeBalance(30)
-    // this.router.navigateByUrl('/')  
   }
 
   onBack() {

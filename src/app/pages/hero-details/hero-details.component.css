@@ -32,6 +32,21 @@
     margin-left: 0.15em;
 }
 
+.add-life {
+    text-align-last: center;
+    font-size: 0.8em;
+    margin-left: 1.8em;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 2.2em;
+    left: 0.4em;
+    gap: 1em;
+}
+
 button {
     background-color: #f1ede7;
     border: solid 0.8px #dcd1d1;
@@ -39,4 +54,5 @@ button {
     color: #d2643b;
     margin-bottom: 2px;
     font-size: 1.3em;
+    width: 4em;
 }

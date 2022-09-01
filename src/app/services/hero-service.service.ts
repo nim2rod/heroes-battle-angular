@@ -208,12 +208,12 @@ export class HeroService {
   }
 
   public saveHero(Hero: Hero) {
+    if(Hero.life < 1) this.deleteHero(Hero._id as string) 
+
     return Hero._id ? this._updateHero(Hero) : this._addHero(Hero)
   }
 
   private _updateHero(Hero: Hero) {
-    console.log('updateee');
-
     //mock the server work
     this._heroesDb = this._heroesDb.map(c => Hero._id === c._id ? Hero : c)
     // change the observable data in the service - let all the subscribers know

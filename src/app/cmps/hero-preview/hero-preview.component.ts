@@ -3,6 +3,7 @@ import { Hero } from 'src/app/models/hero.model';
 import { UserService } from '../../services/user.service';
 import { UserModel } from 'src/app/models/user.model';
 import { Subscription } from 'rxjs';
+import { HeroService } from 'src/app/services/hero-service.service';
 
 @Component({
   selector: 'hero-preview',
@@ -14,7 +15,7 @@ export class HeroPreviewComponent implements OnInit {
     // user!: UserModel;
     // userSubscriber!: Subscription;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService, private heroService: HeroService) { }
 
   @Input() hero!: Hero
   @Output() onRemove = new EventEmitter<string>()
@@ -28,7 +29,10 @@ export class HeroPreviewComponent implements OnInit {
 // }
 
   onRemoveHero() {
+    console.log(this.hero);
+    
     this.onRemove.emit(this.hero._id)
+    // this.heroService.deleteHero(this.hero._id)
     this.userService.changeBalance(30)
   }
 }

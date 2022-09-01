@@ -5,11 +5,17 @@
             <div>Type of: <span>{{hero.typeOf}}</span></div>
             <div>Attack: <span>{{hero.attacks}}</span></div>
             <div>Power: <span>{{hero.power}}</span></div>
-            <div>Life: <span>{{hero.life}}</span></div>
+            <div class="life-row">
+                Life: <span>{{hero.life}}</span> 
+                <!-- <div class="add-life"><span>+</span> <br> use aid</div> -->
+            </div>
         </div>
     </div>
     
     <img src="https://robohash.org/{{hero._id}}?set=set1" alt="">
+<div class="bottom">
+    <button (click)="onHeal()">Heal</button>
     <button (click)="onBack()">Back</button>
+</div>
   
 </section>

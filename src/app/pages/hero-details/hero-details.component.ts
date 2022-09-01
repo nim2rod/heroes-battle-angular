@@ -2,6 +2,9 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Hero } from 'src/app/models/hero.model';
 import { HeroService } from 'src/app/services/hero-service.service';
+import { UserService } from 'src/app/services/user.service';
+import { UserModel } from 'src/app/models/user.model';
+import { Observable, Subscription } from 'rxjs';
 
 @Component({
   selector: 'hero-details',
@@ -10,10 +13,15 @@ import { HeroService } from 'src/app/services/hero-service.service';
 })
 export class HeroDetailsComponent implements OnInit {
 
+  user!: UserModel;
+  user$!: Observable<UserModel>;
+  userSubscription!: Subscription
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private heroService: HeroService
+    private heroService: HeroService,
+    private userService: UserService
   ) { }
 
   @Input() heroId!: string
@@ -23,10 +31,26 @@ export class HeroDetailsComponent implements OnInit {
     this.route.data.subscribe(data => {
       this.hero = data['hero']
     })
+
+    this.user$ = this.userService.user$
+    this.userSubscription = this.userService.user$.subscribe(user => this.user = user);
   }
 
   onBack() {
     this.router.navigateByUrl('/')
+  }
+
+  onHeal() {
+   console.log('this.hero',this.hero);
+   if(this.user.aid<1) return
+   //update hero
+   const updatedHero = this.hero
+        updatedHero.life ++
+        console.log('updatedHero',updatedHero);
+        this.heroService.saveHero(updatedHero)
+
+      //update user
+        this.userService.changeAidNum(-1)
   }
 
 }
