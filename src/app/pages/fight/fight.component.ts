@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { lastValueFrom,delay,of } from 'rxjs';
+import { lastValueFrom, delay, of } from 'rxjs';
 import { Hero } from 'src/app/models/hero.model';
 import { HeroService } from 'src/app/services/hero-service.service';
 import { UserService } from 'src/app/services/user.service';
@@ -22,7 +22,7 @@ export class FightComponent implements OnInit {
   ) { }
 
   @Input() heroId!: string
-  
+
   hero!: Hero
 
   ngOnInit(): void {
@@ -30,7 +30,7 @@ export class FightComponent implements OnInit {
       const hero = await lastValueFrom(this.heroService.getHeroById(params['id']))
       if (hero) this.hero = hero
     })
-    
+
     //BACKROUND FIGHT MUSIC
     let audio = new Audio('./assets/sounds/battle.wav')
     audio.play()
@@ -38,34 +38,34 @@ export class FightComponent implements OnInit {
     //RANDOM WINNER
 
     //WIN
-    if(Math.random()>0.6){
-      setTimeout(()=>{
+    if (Math.random() > 0.5) {
+      setTimeout(() => {
         this.userService.changeBalance(30)
         this.router.navigateByUrl('/')
-      },3500)
+      }, 3500)
 
-    setTimeout(()=>{
-      let audio = new Audio('./assets/sounds/earn-coin.wav')
-      audio.play()
-    },2500)
+      setTimeout(() => {
+        let audio = new Audio('./assets/sounds/earn-coin.wav')
+        audio.play()
+      }, 2500)
 
 
-    //LOSE
-    } else{
-      setTimeout(()=>{
+      //LOSE
+    } else {
+      setTimeout(() => {
         const updatedHero = this.hero
-        updatedHero.life -- 
+        updatedHero.life--
         this.heroService.saveHero(updatedHero)
 
         this.userService.changeBalance(-30)
         this.router.navigateByUrl('/')
 
-      },3500)
-      setTimeout(()=>{
+      }, 3500)
+      setTimeout(() => {
         let audio = new Audio('./assets/sounds/lose.wav')
         audio.play()
-      },2500)
-    } 
+      }, 2500)
+    }
   }
 
   onBack() {

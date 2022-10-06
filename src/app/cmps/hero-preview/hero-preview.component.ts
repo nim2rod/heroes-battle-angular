@@ -20,8 +20,6 @@ export class HeroPreviewComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-
   onRemoveHero() {
     this.onRemove.emit(this.hero._id)
     // this.heroService.deleteHero(this.hero._id)

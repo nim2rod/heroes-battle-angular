@@ -21,6 +21,7 @@
     flex-wrap: wrap;
     gap: 2em;
     padding: 1em;
+    margin-bottom: 3em;
 }
 
 .med-catalog img {
@@ -49,6 +50,35 @@
 
 .right-side-store {
     text-align: center;
+}
+
+.not-anough-1 {
+    position: absolute;
+    bottom: 16em;
+    background-color: aliceblue;
+    color: brown;
+    opacity: 0.8;
+    width: 11.9em;
+    height: 8em;
+    right: 15.6em;
+    border-radius: 4px;
+}
+
+.ballance-modal {
+    position: fixed;
+    left: 31%;
+    background-color: aliceblue;
+    /* height: 15em; */
+    /* width: 20em; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    padding: 1.7em;
+    border-radius: 9px;
+    font-weight: 200;
+    display: none;
 }
 
 @media (max-width: 500px) {

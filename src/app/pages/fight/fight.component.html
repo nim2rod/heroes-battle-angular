@@ -1,6 +1,9 @@
 <section *ngIf="hero" class="battle-page">
     
-    <h1>Fight!</h1>
+    <div>
+        <h1>Fight!</h1>
+        <div class="life-hero">Life: <span>{{hero.life}}</span></div>
+    </div>
     
 <div class="robots">
     <img src="https://robohash.org/{{hero._id}}?set=set3">
