@@ -14,7 +14,11 @@ export class EquipmentMarketComponent implements OnInit {
   user$!: Observable<UserModel>;
   userSubscription!: Subscription
 
+  ///
+  availableStatus = 1
+  ///
   constructor(private userService: UserService) { }
+
 
   ngOnInit(): void {
     this.user$ = this.userService.user$
@@ -25,7 +29,12 @@ export class EquipmentMarketComponent implements OnInit {
     if (this.user.balance < (-price)) {
       let audio = new Audio('./assets/sounds/stuck.wav')
       audio.play()
-
+      setTimeout(() => {
+        this.availableStatus = 0
+      }, 400)
+      setTimeout(() => {
+        this.availableStatus = 1
+      }, 2000)
       return
     }
 

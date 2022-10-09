@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { lastValueFrom } from 'rxjs';
 import { Hero } from 'src/app/models/hero.model';
 import { HeroService } from 'src/app/services/hero-service.service';
-import {UserService} from 'src/app/services/user.service'
+import { UserService } from 'src/app/services/user.service'
 import { UserModel } from 'src/app/models/user.model';
 import { Observable, Subscription } from 'rxjs';
 
@@ -17,6 +17,7 @@ export class AddHeroComponent implements OnInit {
   user!: UserModel;
   user$!: Observable<UserModel>;
   userSubscription!: Subscription
+  availableStatus = 1
 
   constructor(private heroService: HeroService,
     private router: Router,
@@ -35,11 +36,17 @@ export class AddHeroComponent implements OnInit {
   }
 
   async onSaveHero() {
-    if(this.user.balance<120){
+    if (this.user.balance < 120) {
       let audio = new Audio('./assets/sounds/stuck.wav')
       audio.play()
+      setTimeout(() => {
+        this.availableStatus = 0
+      }, 400)
+      setTimeout(() => {
+        this.availableStatus = 1
+      }, 2000)
       return
-    } 
+    }
 
     let audio = new Audio('./assets/sounds/add-hero.wav')
     audio.play()

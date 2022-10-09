@@ -68,8 +68,6 @@
     position: fixed;
     left: 31%;
     background-color: aliceblue;
-    /* height: 15em; */
-    /* width: 20em; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +77,10 @@
     border-radius: 9px;
     font-weight: 200;
     display: none;
+}
+
+.show-modal {
+    display: block;
 }
 
 @media (max-width: 500px) {
@@ -112,4 +114,10 @@
         font-weight: 700;
     }
 
+    .show-modal {
+        left: 7%;
+        bottom: 38%;
+        padding: 1.3em;
+        width: 86%;
+    }
 }

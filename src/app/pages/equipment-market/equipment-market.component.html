@@ -43,7 +43,7 @@
             </div>
             
         </div>
-        <div class="ballance-modal">Ballance too <br> low</div>
+        <div class="ballance-modal" [ngClass]="{'show-modal':availableStatus === 0}">Ballance too <br> low</div>
     </div>
 </section>
 

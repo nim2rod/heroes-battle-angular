@@ -54,6 +54,26 @@ button {
     font-weight: 500;
 }
 
+.ballance-modal {
+    position: fixed;
+    left: 31%;
+    bottom: 30%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3em;
+    padding: 1.7em;
+    border-radius: 9px;
+    font-weight: 200;
+    display: none;
+}
+
+.show-modal {
+    display: block;
+}
+
 @media (max-width: 500px) {
 
     .input-type-of {
@@ -72,5 +92,11 @@ button {
         font-size: 1.5em;
         border-radius: 5px;
         padding: 1px;
+    }
+
+    .show-modal {
+        left: auto;
+        bottom: 45%;
+        padding: 1.3em;
     }
 }
