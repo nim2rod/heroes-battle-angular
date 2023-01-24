@@ -2,6 +2,9 @@
 Collect, Create, Fight and Train your Heroes!
 
 #
+https://nim2rod.github.io/heroes-battle-angular/
+
+#
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
